@@ -5,10 +5,6 @@
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
-body {
-    background-color: #141414;
-}
-
 .navbar {
     background: #131313;
     height: 80px;
@@ -60,7 +56,7 @@ body {
   }
 
   .navbar__item {
-    height: 80%;
+    height: 80px;
 
   }
 
@@ -133,7 +129,7 @@ body {
     }
 
     .navbar__menu.active {
-
+        background: #131313;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -265,7 +261,7 @@ body {
     border: none;
     border-radius: 4px;
     color: white;
-    margin: 2rem;
+    margin-top: 2rem;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -324,6 +320,7 @@ body {
     .main__content {
         text-align: center;
         margin-bottom: 4rem;
+
         
     }
 
@@ -338,8 +335,9 @@ body {
 
 
     .main__content p {
-        font-size: 1rem;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+     
     }
   }
 
@@ -356,8 +354,9 @@ body {
 
 
     .main__content p {
-        font-size: 2rem;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+
     }
 
     .main__btn {
@@ -367,7 +366,7 @@ body {
   }
 
 
-  /*services----*/
+  /*services section--------*/
   .services {
     background: #141414;
     display: flex;
@@ -402,7 +401,8 @@ body {
     border-radius: 4px;
     background-image: linear-gradient(to bottom, 
     rgba(0, 0, 0, 0) 0%,
-     rgba(17, 17, 17, 0.6) 100%),
+     rgba(17, 17, 17, 0.6) 100%
+     ),
       url('/pexels-darlene-alderson-4389464.jpg');
     background-size: cover;
     position: relative;
@@ -415,7 +415,6 @@ body {
     rgba(0, 0, 0, 0) 0%,
      rgba(17, 17, 17, 0.6) 100%),
       url('/pexels-areous-ahmad-843141-3175977.jpg');
-      background-size: cover;
   }
 
   .services h2 {
@@ -450,7 +449,7 @@ body {
     cursor: pointer;
   }
   
-@media screenvand (max-width: 960px) {
+@media screen and (max-width: 960px) {
     .services {
         height: 1600px;
     }
@@ -477,4 +476,36 @@ body {
 
 /*--footer----*/
 
+.footer__container {
+    background-color: #141414;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+
+#footer__logo {
+    color:#fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link--wrapper {
+    display: flex
+}
+
+.footer__link--items {
+    display: flex;
+    flex-direction:
+}
