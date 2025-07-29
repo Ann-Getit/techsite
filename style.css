@@ -302,6 +302,13 @@
   #main__img {
     height: 80%;
     width: 80%;
+
+  }
+
+  #main__img:hover {
+        transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
   }
 
   /*-- mobile responsive---*/
