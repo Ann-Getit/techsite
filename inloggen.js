@@ -30,9 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (data.success) {
       console.log("Login gelukt → redirect...");
+      localStorage.setItem('loggedIn', 'true'); // status opslaan
       window.location.href = 'InAccount.html';  // of een dashboard
     } else {
       alert('Login mislukt: ' + (data.message || 'Probeer opnieuw'));
     }
+
   });
 });

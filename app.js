@@ -26,3 +26,8 @@ menu.addEventListener('click', function() {
  menuLinks.classList.toggle('active');
 })
 
+function logout() {
+  localStorage.removeItem('loggedIn');
+  window.location.href = 'inloggen.html';
+}
+  // of cookies verwijderen window.location.href = 'inloggen.html';
