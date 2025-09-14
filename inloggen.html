@@ -3,24 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADVANCED Website </title>
+    <title>ADVANCED Website</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Dancing+Script:wght@400..700&family=Gajraj+One&family=Kumbh+Sans:wght@100..900&family=Nata+Sans:wght@100..900&family=Playwrite+IE:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+
+      body {
+        background-color: #141414;
+      }
+      form {
+        text-align: center;
+      }
+     
+
+      input {
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
+        margin: 10px;
+      }
+
+      button {
+        width: 60px;
+        height: 30px;
+        background-color: #6f21db;
+        color: whitesmoke;
+      }
+
+      button:hover {
+       background: #ff37c3;
+       transition: all 0.3s ease;
+      }
+
+      .footer__container {
+        padding-top: 250px;
+      }
+
+       h4 {
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+          font-family: "Bitcount Prop Double", system-ui;
+        font-size: 20px;
+        font-weight: 200;
+      }
+
+      .bitcount-prop-double-h4 {
+  font-family: "Bitcount Prop Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+div h4 {
+    font-size: 20px;
+    background-color: #7e2594;
+    background-image: linear-gradient(to top, #ed2cd0 0%, #cccf0c 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+    </style>
 
 </head>
 <body>
-    
+
+      
 <nav class="navbar">
 <div class="navbar__container">
 <a href="/" id="navbar__logo">ADVANCED</a>
 <div class="navbar__toggle" id="mobile-menu">
 <span class="bar"></span>
-<span class="bar"></span> <!--wat is dit-->
+<span class="bar"></span>
 <span class="bar"></span>
 </div>
-<ul class="navbar__menu">
 
+<ul class="navbar__menu">
 <li class="navbar__item">
 <a href="/" class="navbar__links">Home</a>
 </li>
@@ -45,37 +118,21 @@
 </div>
 </nav>
 
-<div class="main">
-<div class="main__container">
-<div class="main__content">
-    <h1></h1>
-    <h2>TECHNOLOGY</h2>
-    <p>See what makes us different.</p>
-    <button class="main__btn"><a href="/">Get Started</a></button>
-</div>
-<div class="main__img--container">
-    <img src="/photos/istockphoto-1394788004-612x612-(1).jpg" alt="pic" id="main__img">
-</div>
-</div>
-</div>
-<!--- services section------>
-<div class="services">
-    <h1>See what the hype is about</h1>
-    <div class="services__container">
-        <div class="services__card">
-        <h2>Experience Bliss</h2>
-        <p>AI Powered Technology</p>
-        <button>Get Started</button>
-    </div>
-    <div class="services__card">
-        <h2>Are you Ready?</h2>
-        <p>Take the Leap</p>
-        <button>Get Started</button>
-    </div>
-</div>
+<div>
+  <h4>To access your account please login with your given email and password.</h4>
+
+   <form id="loginForm">
+  <input type="email" id="email" placeholder="Email" required>
+  <input type="password" id="password" placeholder="Password" required>
+  <button type="submit">Login</button>
+</form>
 </div>
 
-<!------footer section--------->
+
+
+
+<!-----footer----------->
+
 <div class="footer__container">
     <div class="footer__links">
         <div class="footer__link--wrapper">
@@ -86,12 +143,8 @@
                 <a href="/">Careers</a>
                 <a href="/">Investments</a>
                 <a href="/">Terms of Services</a>
-
-
-
-                
             </div>
-        </div>
+    
         <div class="footer__link--wrapper">
             <div class="footer__link--items">
                 <h2>Media</h2>
@@ -103,6 +156,10 @@
             </div>
         </div>
     </div>
+ 
+    </div>
+
+       <br><br>
     <div class="social__media">
         <div class="social__media--wrap">
             <div class="footer__logo">
@@ -131,7 +188,11 @@
 
 
 
+
+
+
 <script src="app.js"></script>
+<script src="inloggen.js"></script>
 
 </body>
 </html>
