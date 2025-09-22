@@ -1,16 +1,4 @@
-/*window.onload = () => {
-  if (!localStorage.getItem('loggedIn')) {
-    // Niet ingelogd → terug naar loginpagina
-    window.location.href = 'inloggen.html';
-  }
-};
-
-function logout () {
-    localStorage.removeItem('loggedIn');//verwijderd logging status
-window.location.href = 'inloggen.html';// naar homepage
-}
-
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
 const isLoggedIn = localStorage.getItem('loggedIn'); //DOMContentLoaded is alleen nodig als js iin <head> is. het zorgt ervoor dat de html als eerst geladen wordt voor dat js aan de slaag gaat. hier toch geplaats om te weten.
 
 if (isLoggedIn) {
@@ -28,4 +16,11 @@ if (isLoggedIn) {
 function logout() {
     localStorage.removeItem('loggedIn');
     window.location.href = 'inloggen.html';
-}*/
+}
+
+// Voorkom dat uitgelogde gebruiker pagina kan terughalen via back-button
+    window.onload = () => {
+      if (!localStorage.getItem('loggedIn')) {
+        window.location.href = 'inloggen.html';
+      }
+    };*/

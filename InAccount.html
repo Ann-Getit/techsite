@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>ADVANCED Website</title>
-    <meta http-equiv="Cache-Control" content="no-store" /><!--deze 3 metas moeten in alle paginas staan waar alleen ingelogden toegang hebben-->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" /><!--deze 3 metas moeten in alle paginas staan waar alleen ingelogden toegang hebben-->
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 
@@ -20,7 +20,7 @@
       
 <nav class="navbar">
 <div class="navbar__container">
-<a href="/" id="navbar__logo">ADVANCED</a>
+<a href="InAccount.html" id="navbar__logo">ADVANCED</a>
 <div class="navbar__toggle" id="mobile-menu">
 <span class="bar"></span>
 <span class="bar"></span>
@@ -29,7 +29,7 @@
 
 <ul class="navbar__menu">
 <li class="navbar__item">
-<a href="/" class="navbar__links">Home</a>
+<a href="InAccount.html" class="navbar__links">Home</a>
 </li>
 
 
@@ -38,11 +38,17 @@
 </li>
 
 <li class="navbar__item">
-<a href="/" class="navbar__links">Products</a>
+<a href="product.html" class="navbar__links">Products</a>
 </li>
 
-<li class="navbar__btn">
-<a href="index.html" class="button" onclick="logout()">Log Out</a>
+<li class="navbar__btn" id="signupBtn">
+<a href="signup.html" class="button">Sign Up</a>
+</li>
+<li class="navbar__btn" id="loginBtn">
+<a href="inloggen.html" class="button">Login</a>
+</li>
+<li class="navbar__btn" id="logoutBtn" style="display:none;"><!--ID NAAM VERANDEREN EN VAN INDEX.HTML-->
+<a href="inloggen.html" class="button">Log Out</a>
 </li>
 </ul>
 </div>
@@ -133,7 +139,6 @@
 
 
 <script src="app.js"></script>
-<script src="inAccount.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
   async function loginUser(email, password) {
     try {
       const res = await fetch('http://127.0.0.1:3002/api/login', {
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const loginForm = document.getElementById('loginForm');
   loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -34,7 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = 'InAccount.html';  // of een dashboard
     } else {
       alert('Login mislukt: ' + (data.message || 'Probeer opnieuw'));
-    }
 
-  });
+    }
+ });
 });
+    // Check login status op andere pagina's
+window.onload = () => {
+  if (!localStorage.getItem('loggedIn')) {
+    window.location.href = 'inloggen.html';
+  }
+};
+
+  // Logout
+function logout() {
+  localStorage.removeItem('loggedIn'); // alleen de status weg
+  window.location.href = 'inloggen.html';
+}
+ 
